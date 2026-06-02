@@ -9,7 +9,7 @@ function AddCreator() {
     name: '',
     url: '',
     description: '',
-    imageURL: '',
+    imageurl: '',
   })
   const [saving, setSaving] = useState(false)
 
@@ -27,7 +27,7 @@ function AddCreator() {
         name: form.name,
         url: form.url,
         description: form.description,
-        imageURL: form.imageURL || null,
+        imageurl: form.imageurl || null,
       }])
 
     if (error) {
@@ -89,8 +89,8 @@ function AddCreator() {
           Image URL (optional)
           <input
             type="url"
-            name="imageURL"
-            value={form.imageURL}
+            name="imageurl"
+            value={form.imageurl}
             onChange={handleChange}
             placeholder="https://..."
           />

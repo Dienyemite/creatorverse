@@ -10,7 +10,7 @@ function EditCreator() {
     name: '',
     url: '',
     description: '',
-    imageURL: '',
+    imageurl: '',
   })
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -30,7 +30,7 @@ function EditCreator() {
           name: data.name || '',
           url: data.url || '',
           description: data.description || '',
-          imageURL: data.imageURL || '',
+          imageurl: data.imageurl || '',
         })
       }
       setLoading(false)
@@ -53,7 +53,7 @@ function EditCreator() {
         name: form.name,
         url: form.url,
         description: form.description,
-        imageURL: form.imageURL,
+        imageurl: form.imageurl,
       })
       .eq('id', id)
 
@@ -134,8 +134,8 @@ function EditCreator() {
             Image URL (optional)
             <input
               type="url"
-              name="imageURL"
-              value={form.imageURL}
+              name="imageurl"
+              value={form.imageurl}
               onChange={handleChange}
               placeholder="https://..."
             />

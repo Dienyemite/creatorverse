@@ -15,6 +15,16 @@
   margin: 0;
 }
 
+.creator-card__img-link {
+  display: block;
+  line-height: 0;
+}
+
+.creator-card__img-link:hover .creator-card__img {
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
 .creator-card__img {
   width: 100%;
   height: 180px;
@@ -31,12 +41,21 @@
   margin: 0 0 0.5rem;
 }
 
+.creator-card__name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.creator-card__name-link:hover {
+  text-decoration: underline;
+}
+
 .creator-card__body p {
   margin: 0 0 0.5rem;
   font-size: 0.9rem;
 }
 
-.creator-card__body a {
+.creator-card__url {
   font-size: 0.85rem;
   word-break: break-all;
 }

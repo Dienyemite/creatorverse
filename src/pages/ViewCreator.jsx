@@ -43,7 +43,7 @@ function ViewCreator() {
       {!loading && creator && (
         <article>
           <img
-            src={creator.imageURL || FALLBACK_IMAGE}
+            src={creator.imageurl || FALLBACK_IMAGE}
             alt={creator.name}
             style={{ width: '100%', maxHeight: '340px', objectFit: 'cover', borderRadius: '8px' }}
             onError={(e) => { e.target.src = FALLBACK_IMAGE }}
